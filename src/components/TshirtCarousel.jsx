@@ -19,7 +19,7 @@ const TshirtCarousel = () => {
 
   return (
     <div className="relative w-full h-auto max-w-lg mx-auto">
-      <img src="/public/images/white-tshirt-background.png" alt="T-shirt Background" className="w-full h-auto" />
+      <img src="/images/white-tshirt-background.png" alt="T-shirt Background" className="w-full h-auto" />
       <img 
         src={tshirtDesigns[currentDesign]} 
         alt="T-shirt Design" 
