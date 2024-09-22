@@ -3,17 +3,17 @@ import React from 'react';
 const FeaturesSection = () => {
   const features = [
     {
-      image: "/public/images/feature-photo1.svg",
+      image: "./public/images/feature-photo1.svg",
       title: "Higher Profits",
       description: "We offer some of the lowest prices in the industry because print providers continuously compete to win your business."
     },
     {
-      image: "/public/images/feature-photo2.svg",
+      image: "./public/images/feature-photo2.svg",
       title: "Robust Scaling",
       description: "Easily handle peak holiday seasons, with our wide network of partners and automatic routing functionality."
     },
     {
-      image: "/public/images/feature-photo3.svg",
+      image: "./public/images/feature-photo3.svg",
       title: "Best Selection",
       description: "With 900+ products and top quality brands, you can choose the best products for your business."
     }
