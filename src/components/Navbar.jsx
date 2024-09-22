@@ -1,7 +1,8 @@
 import React from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 import logo from '/public/images/printify-logo.png';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
       <div className="flex items-center">
@@ -10,41 +11,39 @@ function Navbar() {
       <ul className="flex space-x-6">
         <li>Catalog</li>
         <li className="relative group">
-          <span>How It Works</span>
-          <ul className="absolute hidden group-hover:block bg-white shadow-lg">
-            <li>How Printify Works</li>
-            <li>Print On Demand</li>
-            <li>Printify Quality Promise</li>
-            <li>What to Sell?</li>
-          </ul>
-        </li>
-        <li>Pricing</li>
-        <li>Blog</li>
-        <li className="relative group">
-          <span>Services</span>
-          <ul className="absolute hidden group-hover:block bg-white shadow-lg">
-            <li>Printify Studio</li>
-            <li>Printify Express Delivery</li>
-            <li>Transfer Products</li>
-            <li>Order In Bulk</li>
-            <li>Experts Program</li>
+          How it works <FaChevronDown className="inline-block" />
+          <ul className="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+            <li className="px-4 py-2 hover:bg-gray-100">How Printify Works</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Print On Demand</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Printify Quality Promise</li>
+            <li className="px-4 py-2 hover:bg-gray-100">What to Sell?</li>
           </ul>
         </li>
         <li className="relative group">
-          <span>Use Cases</span>
-          <ul className="absolute hidden group-hover:block bg-white shadow-lg">
-            <li>Merch for Fans</li>
-            <li>Merch for eCommerce</li>
-            <li>Merch for Enterprises</li>
-            <li>Grow Your Store</li>
+          Services <FaChevronDown className="inline-block" />
+          <ul className="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+            <li className="px-4 py-2 hover:bg-gray-100">Printify Studio</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Printify Express Delivery</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Transfer Products</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Order In Bulk</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Experts Program</li>
           </ul>
         </li>
         <li className="relative group">
-          <span>Need Help?</span>
-          <ul className="absolute hidden group-hover:block bg-white shadow-lg">
-            <li>Help Center</li>
-            <li>Contacts</li>
-            <li>My Requests</li>
+          Use Cases <FaChevronDown className="inline-block" />
+          <ul className="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+            <li className="px-4 py-2 hover:bg-gray-100">Merch for Fans</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Merch for eCommerce</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Merch for Enterprises</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Grow Your Store</li>
+          </ul>
+        </li>
+        <li className="relative group">
+          Need Help? <FaChevronDown className="inline-block" />
+          <ul className="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+            <li className="px-4 py-2 hover:bg-gray-100">Help Center</li>
+            <li className="px-4 py-2 hover:bg-gray-100">Contacts</li>
+            <li className="px-4 py-2 hover:bg-gray-100">My Requests</li>
           </ul>
         </li>
       </ul>
@@ -54,6 +53,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
